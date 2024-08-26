@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagiv Antebi | Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Sagiv Antebi</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="home-intro">
-        <!-- <h2>About Me</h2> -->
+    <!-- Home Section -->
+    <section id="home" class="home-intro">
         <div class="about-container">
             <img src="assets/images/sagiv.jpeg" alt="Sagiv Antebi" class="profile-pic">
             <div class="about-text">
@@ -43,10 +44,137 @@
         </div>
     </section>
 
-    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="ai">AI</button>
+            <button class="filter-btn" data-category="bots">Bots</button>
+            <button class="filter-btn" data-category="cyber">Cyber</button>
+            <button class="filter-btn" data-category="applications">Applications</button>
+            <button class="filter-btn" data-category="low-level">Low Level</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/tag_tab_coming_soon.png" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Tag&Tab - Efficient and Effective Detection of Pretraining Data from Large Language Models</h3>
+                    <p>Novel method for detecting pretraining data from Large Language Models (LLMs)</p>
+                    <!-- <a href="https://github.com/sagivantebi/Deep_Reinforcement_Learning-Final_Drill" target="_blank" class="project-link"> -->
+                        <!-- <i class="fab fa-github"></i> View on GitHub -->
+                    <!-- </a> -->
+                </div>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/gpt-sheep.jpg" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>GPT in Sheep’s Clothing: The Risk of Customized GPTs</h3>
+                    <p>Exploring the risks associated with custom GPTs, particularly in terms of privacy and security threats.</p>
+                    <a href="https://arxiv.org/abs/2401.09075" target="_blank" class="project-link">
+                        <i class="fab fa-arxiv"></i> View on Arxiv
+                    </a>
+                    <img src="assets/images/gpt-sheep-2.jpg" alt="Project Icon" class="project-icon">
+                </div>
+            </div>
+
+            <!-- Merom Vocal Waiting Time Assistant -->
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/m3.jpeg" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Merom - GPT-Powered Virtual Customer Service Agent</h3>
+                    <p>Merom is a cutting-edge virtual customer service agent designed to seamlessly blend AI efficiency with a human touch, addressing common customer service issues in a cost-effective and efficient manner.</p>
+                    <a href="https://github.com/sagivantebi/Merom-Vocal_Waiting_Time_Assistant-Python" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <img src="assets/images/m2.jpg" alt="Project Icon" class="project-icon">
+                    <img src="assets/images/m4.jpeg" alt="Project Icon" class="project-icon">
+
+                </div>
+            </div>
+
+            <!-- DaliDoodle Paint With Me Bot -->
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/dd.png" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>DaliDoodle - Paint With Me Chat Bot</h3>
+                    <img src="assets/images/dd1.png" alt="Project Icon" class="project-icon">
+
+                    <p>Creating a Painting Description together using LLMs and afterward Painting it using Text to Image model.</p>
+                    <a href="https://github.com/sagivantebi/DaliDoodle_Paint_With_Me_Bot-Python" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <video controls class="project-video">
+                        <source src="assets/videos/dalidoodle vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="assets/images/dd_flow.png" alt="Project Icon" class="project-icon">
+                </div>
+            </div>
+
+
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/side_channel0.jpg" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Side Channel attack on LLMs</h3>
+                    <p>Topic Inference through LLM Side Channels: Analyzing Model Response Times for Encrypted Traffic</p>
+                    <a href="https://github.com/sagivantebi/Topic-Inference/tree/main" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <img src="assets/images/side_channel3.jpg" alt="Project Icon" class="project-icon">
+                    <img src="assets/images/side_cannel2.jpg" alt="Project Icon" class="project-icon">
+                    <img src="assets/images/side_channel4.jpg" alt="Project Icon" class="project-icon">
+                </div>
+            </div>
+
+            
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/drl.gif" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Deep Reinforcement Learning - Transfer Learning</h3>
+                    <p>Actor-Critic with Transfer Learning for Control Problems</p>
+                    <a href="https://github.com/sagivantebi/Deep_Reinforcement_Learning-Final_Drill" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <img src="assets/images/drl2.jpg" alt="Project Icon" class="project-icon">
+                </div>
+            </div>
+
+            <!-- Prompt Injection Detectors for LLMs -->
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/detector_without_background.png" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Prompt Injection Detectors for LLMs</h3>
+                    <p>This project focuses on developing and evaluating various prompt injection detectors to safeguard large language models (LLMs) from adversarial inputs. The project includes multiple approaches, such as rule-based and perplexity-based detectors.</p>
+                    <a href="https://github.com/sagivantebi/Prompt-injection-detectors-for-LLMs?tab=readme-ov-file" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <img src="assets/images/detector_results.png" alt="Project Icon" class="project-icon">
+
+                </div>
+            </div>
+
+
+            <!-- Face Recognition Project -->
+            <div class="project-card" data-category="ai">
+                <img src="assets/images/facere.jpg" alt="Project Icon" class="project-icon">
+                <div class="project-info">
+                    <h3>Face Recognition System</h3>
+                    <p>This project implements a face recognition system using deep learning techniques. It is designed to accurately identify and verify individuals in real-time, making it suitable for security and access control applications.</p>
+                    <a href="https://github.com/sagivantebi/Face_Recognition" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Sagiv Antebi</p>
     </footer>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
