@@ -175,6 +175,7 @@ footer {
     color: #007bff;
     font-weight: bold;
     text-align: center;
+    
 }
 
 .about-text .skills h3 {
@@ -211,6 +212,7 @@ footer {
     justify-content: center; /* Centers the container horizontally */
     align-items: center; /* Centers the content vertically */
     text-align: left; /* Centers text within its container */
+    
 }
 
 .about-container {
@@ -242,13 +244,20 @@ footer {
     color: #343a40;
 }
 
-.about-text .intro-point {
+.intro-point {
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px; /* Add space between intro-point divs */
 }
+
+/* Remove margin-bottom for the last intro-point to avoid extra space */
+.intro-point:last-child {
+    margin-bottom: 0;
+}
+
 .text-left {
     text-align: left;
 }
