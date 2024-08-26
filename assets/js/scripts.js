@@ -37,3 +37,27 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.1, // Lower threshold to ensure it triggers even if partially in view
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                appearOnScroll.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
