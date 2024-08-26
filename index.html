@@ -13,10 +13,19 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="filter-btn2" data-category="all">All</a>
+                        <a href="#" class="filter-btn2" data-category="ai">Ai</a>
+                        <a href="#" class="filter-btn2" data-category="cyber">Cyber & Bots</a>
+                        <a href="#" class="filter-btn2" data-category="applications">Apps</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
+    
 
     <!-- Home Section -->
     <section id="home" class="home-intro">
@@ -309,7 +318,7 @@
                 <img src="assets/images/PRODUCER-CONSUMER.png" alt="Project Icon" class="project-icon">
                 <div class="project-info">
                     <h3>Producer-Consumer Problem Implementation</h3>
-                    <p>This project implements the classic Producer-Consumer problem in C++. The implementation includes both bounded and unbounded queues for managing the produced and consumed items. The project is structured to allow easy compilation and execution using CMake or a provided makefile.</p>
+                    <p>This project implements the classic Producer-Consumer problem in C++. The implementation includes both bounded and unbounded queues for managing the produced and consumed items.</p>
                     <a href="https://github.com/sagivantebi/OS_Producer_Consumer/tree/master" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
