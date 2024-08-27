@@ -2,9 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #343a40; /* Gray Black background */
+    color: #f8f9fa; /* Adjust text color for better contrast */
 }
+
 
 nav ul {
     list-style-type: none;
@@ -22,7 +23,7 @@ nav ul li {
 header {
     background-color: #343a40;
     color: white;
-    padding: 5px 20px 0; /* Reduce the padding to make the nav bar narrower */
+    padding: 5px 5px 0; /* Reduce the padding to make the nav bar narrower */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -61,8 +62,53 @@ h2 {
 .project-filters {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px;
 }
+
+.pill-btn {
+    background-color: #ffffff;
+    color: #343a40;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px; /* Creates the pill shape */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Ensure button is above the pseudo-element */
+}
+
+.pill-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: #007bff;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.pill-btn:hover {
+    color: #ffffff; /* Change text color on hover */
+    border-color: #0056b3; /* Darken border on hover */
+}
+
+.pill-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.pill-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
 
 .filter-btn {
     background-color: #007bff;
@@ -208,11 +254,14 @@ footer {
 }
 
 .home-intro {
-    display: flex;
-    justify-content: center; /* Centers the container horizontally */
-    align-items: center; /* Centers the content vertically */
-    text-align: left; /* Centers text within its container */
-    
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.home-intro.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-container {
@@ -222,19 +271,32 @@ footer {
 
 
 
-/* Profile Picture Styling */
 .profile-pic-container {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.profile-pic-container.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .profile-pic {
-    width: 200px;
+    width: 300px; /* Larger size */
     height: auto;
-    border-radius: 50%;
-    border: 5px solid #212529;
+    border-radius: 10%; /* Optional: Uncomment if you want the rounded effect */
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
+
+
+
 
 /* About Text Styling */
 .about-text {
@@ -447,7 +509,7 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
     display: block; /* Ensure elements are displayed */
 }
 
@@ -466,7 +528,7 @@ footer {
 .links .icon {
     width: 60px;
     height: 60px;
-    fill: #000000;
+    fill: #ffffff;
     transition: fill 0.4s ease;
 }
 
@@ -474,3 +536,67 @@ footer {
     fill: #0056b3; /* Darken color on hover */
 }
 
+/* Adjustments for Bootstrap Navbar */
+.navbar {
+    padding: 1rem;
+    background-color: #343a40 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .dropdown-item {
+    color: #ffffff !important;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #007bff;
+    color: #ffffff !important;
+}
+
+/* Sticky navbar adjustments */
+.sticky-top {
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4a525a !important; /* Ensure this background color is applied */
+    color: #f8f9fa; /* Adjust text color for better contrast */
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.text-primary {
+    color: #ffffff !important; /* Adjust the color to fit your theme */
+}

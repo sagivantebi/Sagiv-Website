@@ -6,24 +6,32 @@
     <title>Sagiv Antebi | Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    <!-- Professional Header with Bootstrap -->
     <header>
-        <h1>Sagiv Antebi</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#projects" class="dropbtn">Projects</a>
-                    <div class="dropdown-content">
-                        <a href="#" class="filter-btn2" data-category="all">All</a>
-                        <a href="#" class="filter-btn2" data-category="ai">Ai</a>
-                        <a href="#" class="filter-btn2" data-category="cyber">Cyber & Bots</a>
-                        <a href="#" class="filter-btn2" data-category="applications">Apps</a>
-                    </div>
-                </li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Merch</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Sagiv Antebi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/watch?v=uHgt8giw1LY" target="_blank">Merch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -85,15 +93,14 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>My Projects</h2>
         <div class="project-filters">
-            <button class="filter-btn" data-category="all">All</button>
-            <button class="filter-btn" data-category="ai">Ai</button>
-            <!-- <button class="filter-btn" data-category="bots">Bots</button> -->
-            <button class="filter-btn" data-category="cyber">Cyber & Bots</button>
-            <button class="filter-btn" data-category="applications">Apps</button>
-            <!-- <button class="filter-btn" data-category="low-level">Low Level</button> -->
+            <button class="pill-btn" data-category="all">All</button>
+            <button class="pill-btn" data-category="ai">AI</button>
+            <button class="pill-btn" data-category="cyber">Cyber & Bots</button>
+            <button class="pill-btn" data-category="applications">Apps</button>
         </div>
+
+
 
         <div class="project-grid">
             <div class="project-card fade-in" data-category="ai">
@@ -157,7 +164,7 @@
                 <img src="assets/images/side_channel0.jpg" alt="Project Icon" class="project-icon">
                 <div class="project-info">
                     <h3>Side Channel attack on LLMs</h3>
-                    <p>Topic Inference through LLM Side Channels: Analyzing Model Response Times for Encrypted Traffic</p>
+                    <p>Topic Inference through LLM Side Channels: Analyzing Model Response Times on Encrypted Traffic</p>
                     <a href="https://github.com/sagivantebi/Topic-Inference/tree/main" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
@@ -395,6 +402,11 @@
             
             
         </div>
+
+    </section>
+    
+
+    <footer>
         <div class="links">
             <a href="https://github.com/sagivantebi" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
@@ -407,12 +419,12 @@
                 </svg>
             </a>
         </div>
-    </section>
-
-    <footer>
         <p>&copy; 2024 Sagiv Antebi</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
