@@ -128,6 +128,7 @@ document.querySelectorAll('.pill-btn').forEach(button => {
 });
 
 function scrollToTop() {
+    console.log("Another Round! button clicked"); // Debugging log
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
