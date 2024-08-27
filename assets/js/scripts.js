@@ -126,3 +126,10 @@ document.querySelectorAll('.pill-btn').forEach(button => {
         button.classList.add('active');
     });
 });
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

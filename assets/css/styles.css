@@ -225,6 +225,34 @@ footer {
     
 }
 
+
+.another-round-container {
+    text-align: center;
+    margin: 40px 0; /* Add space above the footer */
+}
+
+.another-round-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.another-round-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.another-round-btn:active {
+    transform: translateY(1px);
+}
+
+
 /* Custom font style for intro title and subtitle */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
@@ -381,7 +409,7 @@ footer {
 
 .final-icon {
     display: block; /* Make the image behave like a block element */
-    margin-left: auto;
+    margin-left: 19%; /* Adjust this value to move the image left */
     margin-right: auto;
     max-width: 50%; /* Ensure it doesn't overflow its container */
 }
