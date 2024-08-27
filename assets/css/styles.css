@@ -219,11 +219,87 @@ footer {
 
 .about-text .intro-title {
     font-size: 2rem;
-    color: #007bff;
+    color: #000000;
     font-weight: bold;
     text-align: center;
     
 }
+
+/* Custom font style for intro title and subtitle */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Comic Neue', cursive; /* Applying casual font style */
+}
+
+.intro-subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Comic Neue', cursive; /* Applying casual font style */
+}
+
+.degrees {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.degree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+
+
+.degree-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.degree-institute-row {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Adjust spacing as needed */
+}
+
+
+.degree-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered */
+}
+
+.centered-logo {
+    margin-top: 10px; /* Adjust the space between the title and the logo */
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+
+.degree:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 .about-text .skills h3 {
     font-size: 1.5rem;
