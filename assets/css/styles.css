@@ -287,13 +287,14 @@ footer {
 }
 
 .profile-pic {
-    width: 300px; /* Larger size */
+    width: 300px; /* Adjust this value to make the picture smaller */
     height: auto;
     border-radius: 10%; /* Optional: Uncomment if you want the rounded effect */
 
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
+
 
 
 
