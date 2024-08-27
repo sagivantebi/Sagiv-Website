@@ -237,6 +237,11 @@ footer {
     font-family: 'Comic Neue', cursive; /* Applying casual font style */
 }
 
+.intro-title, .intro-subtitle {
+    font-family: 'Comic Neue', cursive, sans-serif; /* Fallback to cursive or sans-serif if Comic Neue is not available */
+}
+
+
 .intro-subtitle {
     font-size: 1.8rem;
     font-weight: 500;
