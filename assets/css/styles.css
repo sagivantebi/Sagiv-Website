@@ -65,7 +65,9 @@ h2 {
     justify-content: center;
     gap: 15px; /* Space between buttons */
     margin-bottom: 30px;
+    padding-top: 15px;
 }
+
 
 .pill-btn {
     background-color: #ffffff;
