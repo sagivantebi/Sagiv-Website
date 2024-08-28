@@ -414,7 +414,7 @@ footer {
 }
 
 .profile-pic {
-    width: 380px; /* Adjust this value to make the picture smaller */
+    width: 430px; /* Adjust this value to make the picture smaller */
     height: auto;
     border-radius: 10%; /* Optional: Uncomment if you want the rounded effect */
     margin-top: 0; /* Reduce or remove top margin */
