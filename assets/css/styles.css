@@ -414,7 +414,7 @@ footer {
 }
 
 .profile-pic {
-    width: 430px; /* Adjust this value to make the picture smaller */
+    width: 350px; /* Adjust this value to make the picture smaller */
     height: auto;
     border-radius: 10%; /* Optional: Uncomment if you want the rounded effect */
     margin-top: 0; /* Reduce or remove top margin */
@@ -773,7 +773,7 @@ h2 {
     }
 
     .profile-pic {
-        width: 300px; /* Reduce the size of the profile picture */
+        width: 500px; /* Reduce the size of the profile picture */
         margin-bottom: 20px; /* Add space below the profile picture */
     }
 }
@@ -804,7 +804,7 @@ h2 {
     }
 
     .profile-pic {
-        width: 250px; /* Further reduce the size of the profile picture */
+        width: 350px; /* Further reduce the size of the profile picture */
     }
 }
 
