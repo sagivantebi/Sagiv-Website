@@ -466,7 +466,7 @@ footer {
 }
 
 .about-text .skills {
-    background: linear-gradient(135deg, #343a40, #00c6ff);
+    background: linear-gradient(135deg, #46576b, #1f1d1d);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -734,3 +734,76 @@ h2 {
 .text-primary {
     color: #ffffff !important; /* Adjust the color to fit your theme */
 }
+/* Existing styles ... */
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 20px; /* Add padding to the sides of the container */
+    }
+
+    .intro-title {
+        font-size: 2rem; /* Reduce font size for mobile */
+    }
+
+    .intro-subtitle {
+        font-size: 1.5rem; /* Reduce font size for mobile */
+    }
+
+    .intro-point {
+        padding: 10px; /* Reduce padding inside the white boxes */
+    }
+
+    .degree {
+        flex-direction: column; /* Stack the degree content vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Reduce padding inside the degree box */
+    }
+
+    .degree-content {
+        width: 100%; /* Ensure content takes full width */
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .centered-logo {
+        margin-top: 10px;
+        width: 150px; /* Reduce the size of the logos on mobile */
+    }
+
+    .profile-pic {
+        width: 300px; /* Reduce the size of the profile picture */
+        margin-bottom: 20px; /* Add space below the profile picture */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 0 15px; /* Further reduce padding on smaller screens */
+    }
+
+    .intro-title {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    .intro-subtitle {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    .intro-point {
+        padding: 8px; /* Further reduce padding inside the white boxes */
+    }
+
+    .degree {
+        padding: 8px; /* Further reduce padding inside the degree box */
+    }
+
+    .centered-logo {
+        width: 120px; /* Further reduce the size of the logos */
+    }
+
+    .profile-pic {
+        width: 250px; /* Further reduce the size of the profile picture */
+    }
+}
+
+/* Existing styles ... */
