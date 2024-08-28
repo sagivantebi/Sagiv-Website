@@ -1,3 +1,17 @@
+// Load projects.html into the projects container
+document.addEventListener("DOMContentLoaded", function() {
+    const projectsContainer = document.querySelector("#projects-container");
+    if (projectsContainer) {
+        fetch("projects.html")
+            .then(response => response.text())
+            .then(data => {
+                projectsContainer.innerHTML = data;
+                // Once the content is loaded, you can initialize any scripts or functions that depend on it
+                initializeProjectFiltering();
+            })
+            .catch(error => console.error("Error loading projects section:", error));
+    }
+});
 document.querySelectorAll('.dropdown-item').forEach(button => {
     button.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default action for links
