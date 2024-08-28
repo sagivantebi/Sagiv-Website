@@ -773,7 +773,7 @@ h2 {
     }
 
     .profile-pic {
-        width: 550; /* Reduce the size of the profile picture */
+        width: 650; /* Reduce the size of the profile picture */
         margin-bottom: 20px; /* Add space below the profile picture */
     }
 }
@@ -804,7 +804,7 @@ h2 {
     }
 
     .profile-pic {
-        width: 400px; /* Further reduce the size of the profile picture */
+        width: 430; /* Further reduce the size of the profile picture */
     }
 }
 
