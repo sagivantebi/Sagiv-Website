@@ -808,23 +808,34 @@ h2 {
     }
 }
 
-.project-heading {
-    text-align: center;
+.project-heading-container {
+    /* background: linear-gradient(135deg, #46576b, #1f1d1d); Gradient background */
+    padding: 20px 0;
+    border-radius: 12px;
     margin-bottom: 40px;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
+    text-align: center; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    color: #ffffff; /* Ensure the text contrasts well with the background */
 }
 
 .project-title {
     font-size: 3rem;
     font-weight: 700;
-    color: #ffffff; /* Use a color that matches your theme */
+    color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: 4px solid #007bff; /* Add a bottom border for emphasis */
     transition: transform 0.3s, opacity 0.3s;
 }
 
 .project-title:hover {
     transform: scale(1.05);
-    opacity: 0.9;
+    opacity: 0.95;
 }
+    
