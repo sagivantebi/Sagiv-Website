@@ -808,4 +808,23 @@ h2 {
     }
 }
 
-/* Existing styles ... */
+.project-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff; /* Use a color that matches your theme */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.project-title:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
