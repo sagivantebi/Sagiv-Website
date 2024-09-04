@@ -34,12 +34,14 @@ document.querySelectorAll('.dropdown-item').forEach(button => {
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
-        const cards = document.querySelectorAll('.project-card');
+        const regularCards = document.querySelectorAll('.project-card'); // Regular project cards
 
         if (category === 'all') {
-            cards.forEach(card => card.style.display = 'block');
+            // Show all regular project cards
+            regularCards.forEach(card => card.style.display = 'block');
         } else {
-            cards.forEach(card => {
+            // Filter regular project cards by category
+            regularCards.forEach(card => {
                 if (card.getAttribute('data-category') === category) {
                     card.style.display = 'block';
                 } else {
@@ -49,6 +51,7 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         }
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const faders = document.querySelectorAll('.fade-in');
